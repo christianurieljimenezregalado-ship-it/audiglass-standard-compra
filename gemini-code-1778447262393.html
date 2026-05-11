@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Audiglass - Edición Premium</title>
+    <style>
+        body {
+            background-color: #050505; /* Un negro más profundo */
+            color: white;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            height: auto;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 700px;
+            width: 100%;
+        }
+
+        /* Título con resplandor */
+        h1 {
+            color: #39FF14;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            font-size: 3rem;
+            margin-bottom: 5px;
+            text-shadow: 0 0 20px rgba(57, 255, 20, 0.6);
+        }
+
+        .subtitulo-premium {
+            color: #ffffff;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            font-weight: 300;
+            margin-bottom: 50px;
+            border-bottom: 1px solid #39FF14;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Imagen con efecto de lujo */
+        .product-image {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 25px;
+            border: 1px solid rgba(57, 255, 20, 0.3);
+            box-shadow: 0 0 50px rgba(57, 255, 20, 0.2);
+            margin-bottom: 40px;
+        }
+
+        /* Bloque de Precio Exclusivo */
+        .precio-premium-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px); /* Efecto de cristal empañado */
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 30px;
+            margin-bottom: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .precio-premium-card::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(57, 255, 20, 0.05) 0%, transparent 70%);
+        }
+
+        .precio-label {
+            color: #39FF14;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .monto-premium {
+            color: #ffffff;
+            font-size: 4rem;
+            font-weight: 900;
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+        }
+
+        /* Especificaciones de Grado Aeroespacial */
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 10px;
+            margin-bottom: 50px;
+        }
+
+        td {
+            padding: 20px;
+            background-color: #111;
+            color: #ddd;
+        }
+
+        td:first-child {
+            border-radius: 15px 0 0 15px;
+            border-left: 3px solid #39FF14;
+            color: #39FF14;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            width: 40%;
+        }
+
+        td:last-child {
+            border-radius: 0 15px 15px 0;
+            text-align: right;
+        }
+
+        /* Botón de Compra con Brillo Intenso */
+        .btn-premium-comprar {
+            display: inline-block;
+            background-color: #39FF14;
+            color: #000;
+            padding: 20px 80px;
+            border-radius: 10px; /* Bordes más rectos para verse más serio/lujoso */
+            font-size: 1.2rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-weight: 900;
+            transition: all 0.4s ease;
+            box-shadow: 0 0 20px rgba(57, 255, 20, 0.4);
+        }
+
+        .btn-premium-comprar:hover {
+            background-color: #ffffff;
+            box-shadow: 0 0 50px #39FF14;
+            transform: translateY(-5px);
+        }
+
+        .detalles-exclusivos {
+            margin-top: 60px;
+            text-align: left;
+            border-left: 1px solid #333;
+            padding-left: 30px;
+        }
+
+        .detalles-exclusivos h2 {
+            color: #39FF14;
+            font-size: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .detalles-exclusivos p {
+            color: #888;
+            line-height: 2;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>AUDIGLASS</h1>
+        <p class="subtitulo-premium">Master Edition — Premium</p>
+
+        <img src="audiglass-premium.jpg" alt="Audiglass Master Edition" class="product-image">
+
+        <div class="precio-premium-card">
+            <span class="precio-label">Inversión en Tecnología</span>
+            <div class="monto-premium">$4,899.00</div>
+            <p style="color: #555; margin-top: 10px; font-size: 0.8rem;">Edición limitada / Materiales de grado aeroespacial</p>
+        </div>
+
+        <table>
+            <tr>
+                <td>🎧 Audio</td>
+                <td>Arquitectura Acústica Premium</td>
+            </tr>
+            <tr>
+                <td>🕶️ Óptica</td>
+                <td>Cristales con Tratamiento Antirreflejante</td>
+            </tr>
+            <tr>
+                <td>💎 Material</td>
+                <td>Acabados Metálicos Pulidos</td>
+            </tr>
+            <tr>
+                <td>🔋 Energía</td>
+                <td>Carga Ultra Rápida (12h uso)</td>
+            </tr>
